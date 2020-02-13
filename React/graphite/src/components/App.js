@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "../App.css";
 import Header from "./Header";
 import Class from "./Class";
-import Search from "./Search";
 
 
 const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=4a3b711b"; // you should replace this with yours
@@ -41,7 +40,7 @@ const App = () => {
 
     
     return (
-     <div className="App">
+     <div className="content">
       <Header />
       <div className="classes">
         {loading && !errorMessage ? (
