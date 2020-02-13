@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
 import Header from "./Header";
-import Movie from "./Movie";
+import Class from "./Class";
 import Search from "./Search";
 
 
@@ -42,17 +42,15 @@ const App = () => {
     
     return (
      <div className="App">
-      <Header text="HOOKED" />
-      <Search search={search} />
-      <p className="App-intro">Sharing a few of our favourite movies</p>
-      <div className="movies">
+      <Header />
+      <div className="classes">
         {loading && !errorMessage ? (
          <span>loading...</span>
          ) : errorMessage ? (
           <div className="errorMessage">{errorMessage}</div>
         ) : (
           movies.map((movie, index) => (
-            <Movie key={`${index}-${movie.Title}`} movie={movie} />
+            <Class key={`${index}-${movie.Title}`} movie={movie} />
           ))
         )}
       </div>
