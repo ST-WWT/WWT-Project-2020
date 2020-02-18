@@ -291,14 +291,14 @@ a {
   height: auto;
 }
 
-#classes-page .content .classes {
+#root .content .classes {
   height: auto;
   text-align: center;
   margin-top: 2%;
   min-height: calc(78vh);
 }
 
-#classes-page .content .classes .class {
+#root .content .classes .class {
   display: inline-grid;
   margin: auto;
   overflow: auto;
@@ -313,7 +313,7 @@ a {
   color: var(--color-white1);
 }
 
-#classes-page .content .classes .class .title {
+#root .content .classes .class .title {
   font-size: 2vmin;
   padding: none;
   margin: none;
@@ -333,33 +333,33 @@ a {
     background-blend-mode: darken;
 }
 
-#classes-page .content .classes .class .title.bg1 {
+#root .content .classes .class .title.bg1 {
   background-image: url("https://image.freepik.com/free-vector/cartoon-background-with-empty-classroom-interior-inside_1441-1735.jpg");
 }
-#classes-page .content .classes .class .title.bg2 {
+#root .content .classes .class .title.bg2 {
   background-image: url("https://d2r55xnwy6nx47.cloudfront.net/uploads/2019/07/Resurrecting-Cells_1200_social-520x273.jpg");
 }
-#classes-page .content .classes .class .title.bg3 {
+#root .content .classes .class .title.bg3 {
   background-image: url("https://img.freepik.com/free-photo/programming-code-abstract-technology-background-software-developer-computer-script_34663-31.jpg?size=626&ext=jpg");
 }
-#classes-page .content .classes .class .title.bg4 {
+#root .content .classes .class .title.bg4 {
   background-image: url("https://ak6.picdn.net/shutterstock/videos/29882086/thumb/1.jpg");
 }
-#classes-page .content .classes .class .title.bg5 {
+#root .content .classes .class .title.bg5 {
   background-image: url("https://lh6.googleusercontent.com/proxy/n0_Bpd8A_NLLPHTK6Xt4N_1NXU4y3w69Qwnywl5DyJr6NS2--aKkg_yavUOa_jar_JFFHdvAaDOC6MKq-aNLf6PFlGPLGDRnPq37d93hKIOLL3g-4b_HNt9B9s1Q64oJUIpRKFtrMSytdUUgf8yuOjXFgrCw-Q");
 }
-#classes-page .content .classes .class .title.bg6 {
+#root .content .classes .class .title.bg6 {
   background-image: url("https://image.freepik.com/free-vector/math-background_23-2148144700.jpg");
 }
-#classes-page .content .classes .class .title.bg7 {
+#root .content .classes .class .title.bg7 {
   background-image: url("https://preemploymentdirectory.com/wp-content/uploads/2013/05/spaininfo.jpg");
 }
-#classes-page .content .classes .class .title.bg8 {
+#root .content .classes .class .title.bg8 {
   background-image: url("https://i2.wp.com/wallur.com/wp-content/uploads/2016/12/spain-background-5.jpg?fit=1920%2C1080");
 }
 
 
-#classes-page .content .classes .class .title h1 {
+#root .content .classes .class .title h1 {
   font-size: 2vmin;
   padding: none;
   margin: none;
@@ -371,7 +371,7 @@ a {
   overflow: hidden;
 }
 
-#classes-page .content .classes .class .title h2 {
+#root .content .classes .class .title h2 {
   font-size: 1.5vmin;
   padding: none;
   margin: none;
@@ -386,7 +386,7 @@ a {
   overflow: hidden;
 }
 
-#classes-page .content .classes .class .schedule {
+#root .content .classes .class .schedule {
   height: 18vmin;
   background-color: var(--color-greyblue1);
   padding: none;
@@ -395,7 +395,7 @@ a {
   margin-top: 0vmin;
 }
 
-#classes-page .content .classes .class .schedule h1 {
+#root .content .classes .class .schedule h1 {
   font-size: 1.5vmin;
   padding: none;
   margin: none;
@@ -404,7 +404,7 @@ a {
   color: white;
 }
 
-#classes-page .content .classes .class .schedule ol {
+#root .content .classes .class .schedule ol {
   list-style-type: none;
   padding-top: none;
   margin-top: none;
@@ -412,12 +412,12 @@ a {
   font-size: 1.4vmin;
 }
 
-#classes-page .content .classes .class .schedule li:nth-child(5) {
+#root .content .classes .class .schedule li:nth-child(5) {
   color: white;
   font-weight: bold;
 }
 
-#classes-page .content .classes .class .options {
+#root .content .classes .class .options {
   height: 5vmin;
   background-color: var(--color-greyblue3);
   padding: none;
@@ -427,7 +427,7 @@ a {
   color: var(--color-gold2);
 }
 
-#classes-page .content .classes .class .options h1 {
+#root .content .classes .class .options h1 {
   font-size: 1.5vmin;
   padding: none;
   margin: none;
@@ -436,7 +436,7 @@ a {
   display: inline-block;
 }
 
-#classes-page .content .classes .contentbox {
+#root .content .classes .contentbox {
   display: inline-block;
   margin: auto;
 
@@ -455,7 +455,7 @@ a {
   margin-top: 88vh;
 }
 
-#classes-page .content .aftercover .contentbox .title {
+#root .content .aftercover .contentbox .title {
   font-size: 8vmin;
   margin: 0;
   padding: 0;
@@ -463,76 +463,76 @@ a {
   text-align: left;
 }
 
-#classes-page .content .classes .class.theme-blue .options {
+#root .content .classes .class.theme-blue .options {
   color: var(--color-theme-blue);
 }
-#classes-page .content .classes .class.theme-blue .title {
+#root .content .classes .class.theme-blue .title {
   border-color: var(--color-theme-blue);
 }
-#classes-page .content .classes .class.theme-blue .title h2 {
+#root .content .classes .class.theme-blue .title h2 {
   background-color: var(--color-theme-blue-transparent);
 }
-#classes-page .content .classes .class.theme-green .options {
+#root .content .classes .class.theme-green .options {
   color: var(--color-theme-green);
 }
-#classes-page .content .classes .class.theme-green .title {
+#root .content .classes .class.theme-green .title {
   border-color: var(--color-theme-green);
 }
-#classes-page .content .classes .class.theme-green .title h2 {
+#root .content .classes .class.theme-green .title h2 {
   background-color: var(--color-theme-green-transparent);
 }
-#classes-page .content .classes .class.theme-red .options {
+#root .content .classes .class.theme-red .options {
   color: var(--color-theme-red);
 }
-#classes-page .content .classes .class.theme-red .title {
+#root .content .classes .class.theme-red .title {
   border-color: var(--color-theme-red);
 }
-#classes-page .content .classes .class.theme-red .title h2 {
+#root .content .classes .class.theme-red .title h2 {
   background-color: var(--color-theme-red-transparent);
 }
-#classes-page .content .classes .class.theme-grey .options {
+#root .content .classes .class.theme-grey .options {
   color: var(--color-theme-grey);
 }
-#classes-page .content .classes .class.theme-grey .title {
+#root .content .classes .class.theme-grey .title {
   border-color: var(--color-theme-grey);
 }
-#classes-page .content .classes .class.theme-grey .title h2 {
+#root .content .classes .class.theme-grey .title h2 {
   background-color: var(--color-theme-grey-transparent);
 }
-#classes-page .content .classes .class.theme-purple .options {
+#root .content .classes .class.theme-purple .options {
   color: var(--color-theme-purple);
 }
-#classes-page .content .classes .class.theme-purple .title {
+#root .content .classes .class.theme-purple .title {
   border-color: var(--color-theme-purple);
 }
-#classes-page .content .classes .class.theme-purple .title h2 {
+#root .content .classes .class.theme-purple .title h2 {
   background-color: var(--color-theme-purple-transparent);
 }
-#classes-page .content .classes .class.theme-orange .options {
+#root .content .classes .class.theme-orange .options {
   color: var(--color-theme-orange);
 }
-#classes-page .content .classes .class.theme-orange .title {
+#root .content .classes .class.theme-orange .title {
   border-color: var(--color-theme-orange);
 }
-#classes-page .content .classes .class.theme-orange .title h2 {
+#root .content .classes .class.theme-orange .title h2 {
   background-color: var(--color-theme-orange-transparent);
 }
-#classes-page .content .classes .class.theme-pink .options {
+#root .content .classes .class.theme-pink .options {
   color: var(--color-theme-pink);
 }
-#classes-page .content .classes .class.theme-pink .title {
+#root .content .classes .class.theme-pink .title {
   border-color: var(--color-theme-pink);
 }
-#classes-page .content .classes .class.theme-pink .title h2 {
+#root .content .classes .class.theme-pink .title h2 {
   background-color: var(--color-theme-pink-transparent);
 }
-#classes-page .content .classes .class.theme-yellow .options {
+#root .content .classes .class.theme-yellow .options {
   color: var(--color-theme-yellow);
 }
-#classes-page .content .classes .class.theme-yellow .title {
+#root .content .classes .class.theme-yellow .title {
   border-color: var(--color-theme-yellow);
 }
-#classes-page .content .classes .class.theme-yellow .title h2 {
+#root .content .classes .class.theme-yellow .title h2 {
   background-color: var(--color-theme-yellow-transparent);
 }
 

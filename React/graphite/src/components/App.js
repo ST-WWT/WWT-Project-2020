@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
 import Header from "./Header";
-import Class from "./Class";
+import Course from "./Course";
 
 
 const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=4a3b711b"; // you should replace this with yours
@@ -36,22 +36,48 @@ const App = () => {
           setLoading(false);
         }
       });
-  	};
+    };
+    
+
+    function course(id, name, teacher, theme, background, assignments) {
+      this.id = id;
+      this.name = name;
+      this.teacher = teacher;
+      this.theme = theme;
+      this.background = background;
+      this.assignments = assignments;
+    }
+
+    function assignment(id, name) {
+      this.id = id;
+      this.name = name;
+    }
+
+    const courses = [
+      new course(0, "Web and Computer Programming", "sborcherding", "theme-blue", "bg3", [
+        new assignment(0, "Foodtruck"),
+        new assignment(1, "Website 1"),
+        new assignment(2, "Website 2"),
+        new assignment(3, "Busywork 3")
+      ])
+    ]
 
     
     return (
      <div className="content">
       <Header />
       <div className="classes">
-        {loading && !errorMessage ? (
+        {
+        /*loading && !errorMessage ? (
          <span>loading...</span>
          ) : errorMessage ? (
           <div className="errorMessage">{errorMessage}</div>
-        ) : (
-          movies.map((movie, index) => (
-            <Class key={`${index}-${movie.Title}`} movie={movie} />
+        ) : (*/
+          courses.map((course, index) => (
+            <Course key={`${index}-${course.name}`} course={course} />
           ))
-        )}
+        /*)*/
+        }
       </div>
     </div>
   );
