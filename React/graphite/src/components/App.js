@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../App.css";
 import Header from "./Header";
 import Course from "./Course";
+import Footer from "./Footer";
 
 
 const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=4a3b711b"; // you should replace this with yours
@@ -58,6 +59,13 @@ const App = () => {
         new assignment(0, "Foodtruck"),
         new assignment(1, "Website 1"),
         new assignment(2, "Website 2"),
+        new assignment(3, "Busywork 3"),
+        new assignment(4, "Busywork 3")
+      ]),
+      new course(0, "Web and Computer Programming", "sborcherding", "theme-pink", "bg2", [
+        new assignment(0, "Foodtruck"),
+        new assignment(1, "Website 1"),
+        new assignment(2, "Website 2"),
         new assignment(3, "Busywork 3")
       ])
     ]
@@ -79,6 +87,7 @@ const App = () => {
         /*)*/
         }
       </div>
+      <Footer />
     </div>
   );
 };

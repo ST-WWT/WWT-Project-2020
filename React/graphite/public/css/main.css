@@ -412,7 +412,7 @@ a {
   font-size: 1.4vmin;
 }
 
-#root .content .classes .class .schedule li:nth-child(5) {
+#root .content .classes .class .schedule li:nth-child(5), #root .content .classes .class .schedule li.v {
   color: white;
   font-weight: bold;
 }
@@ -432,7 +432,7 @@ a {
   padding: none;
   margin: none;
   text-align: left;
-  padding: 0.5vmin 0.5vmin 1vmin 1.5vmin;
+  padding: 0.5vmin 0.5vmin 1vmin 2vmin;
   display: inline-block;
 }
 

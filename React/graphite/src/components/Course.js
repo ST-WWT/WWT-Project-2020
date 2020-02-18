@@ -6,19 +6,20 @@ const Course = ({ course }) => {
   const theme = course.theme || "theme-yellow";
   const background = course.background || "bg1";
   return (
-    <div className={`class ${theme}`}>
+    <div className={`class ${theme} noselect`}>
         <div className={`title ${background}`}>
           <h1>{course.name}</h1>
-          <h2>{course.teacher}</h2>
+          <h2>{`Teacher: ${course.teacher}`}</h2>
         </div>
         <div class="schedule">
           <h1><i class="fas fa-align-right"></i> Upcoming assignments</h1>
           <ol>
           {
-            assignments.map((course, index) => (
+            assignments.slice(0, assignments.length > 4 ? 4 : assignments.length).map((course, index) => (
               <li>{course.name}</li>
             ))
           }
+          <li className="v">View all...</li>
           </ol>
         </div>
         <div class="options">
