@@ -11,21 +11,21 @@ const Course = ({ course }) => {
           <h1>{course.name}</h1>
           <h2>{`Teacher: ${course.teacher}`}</h2>
         </div>
-        <div class="schedule">
-          <h1><i class="fas fa-align-right"></i> Upcoming assignments</h1>
+        <div className="schedule">
+          <h1><i className="fas fa-align-right"></i> Upcoming assignments</h1>
           <ol>
           {
-            assignments.slice(0, assignments.length > 4 ? 4 : assignments.length).map((course, index) => (
-              <li>{course.name}</li>
+            assignments.slice(0, 4).map((assignment, index) => (
+              <li key={assignment.id}>{assignment.name}</li>
             ))
           }
-          <li className="v">View all...</li>
+          <li key="v" className="v">View all...</li>
           </ol>
         </div>
-        <div class="options">
-          <h1><i class="fas fa-calendar-week"></i> Schedule</h1>
-          <h1><i class="fas fa-users"></i> Classmates</h1>
-          <h1><i class="fas fa-graduation-cap"></i> Grades</h1>
+        <div className="options">
+          <h1><i className="fas fa-calendar-week"></i> Schedule</h1>
+          <h1><i className="fas fa-users"></i> Classmates</h1>
+          <h1><i className="fas fa-graduation-cap"></i> Grades</h1>
         </div>
       </div>
   );
