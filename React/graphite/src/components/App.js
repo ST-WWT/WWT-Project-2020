@@ -62,12 +62,48 @@ const App = () => {
         new assignment(3, "Busywork 3"),
         new assignment(4, "Busywork 3")
       ]),
-      new course(0, "Web and Computer Programming", "sborcherding", "theme-pink", "bg2", [
-        new assignment(0, "Foodtruck"),
-        new assignment(1, "Website 1"),
-        new assignment(2, "Website 2"),
-        new assignment(3, "Busywork 3")
-      ])
+      new course(1, "AP BioChem and Human Anatomy", "teacher2", "theme-green", "bg2", [
+        new assignment(0, "Cells project"),
+        new assignment(1, "Human body"),
+        new assignment(2, "Test review"),
+        new assignment(3, "Bookwork")
+      ]),
+      new course(2, "AP World History", "kingnellie", "theme-red", "bg4", [
+        new assignment(0, "Notes: Chapter 1"),
+        new assignment(1, "Notes: Chapter 2"),
+        new assignment(2, "Notes: Chapter 3"),
+        new assignment(3, "Notes: Chapter 4")
+      ]),
+      new course(3, "11th Grade Language Arts", "teacher4", "theme-orange", "bg5", [
+        new assignment(0, "The Great Gatsby Chapter 6 Quiz"),
+        new assignment(1, "Literature Analysis"),
+        new assignment(2, "The Great Gatsby Chapter 7"),
+        new assignment(3, "")
+      ]),
+      new course(3, "", "teacher4", "theme-orange", "bg5", [
+        new assignment(0, ""),
+        new assignment(1, ""),
+        new assignment(2, ""),
+        new assignment(3, "")
+      ]),
+      new course(3, "", "teacher4", "theme-orange", "bg5", [
+        new assignment(0, ""),
+        new assignment(1, ""),
+        new assignment(2, ""),
+        new assignment(3, "")
+      ]),
+      new course(3, "", "teacher4", "theme-orange", "bg5", [
+        new assignment(0, ""),
+        new assignment(1, ""),
+        new assignment(2, ""),
+        new assignment(3, "")
+      ]),
+      new course(3, "", "teacher4", "theme-orange", "bg5", [
+        new assignment(0, ""),
+        new assignment(1, ""),
+        new assignment(2, ""),
+        new assignment(3, "")
+      ]),
     ]
 
     
