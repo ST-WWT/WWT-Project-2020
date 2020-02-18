@@ -78,31 +78,31 @@ const App = () => {
         new assignment(0, "The Great Gatsby Chapter 6 Quiz"),
         new assignment(1, "Literature Analysis"),
         new assignment(2, "The Great Gatsby Chapter 7"),
-        new assignment(3, "")
+        new assignment(3, "The Great Gatsby Chapter 7 Study Guide")
       ]),
-      new course(3, "", "teacher4", "theme-orange", "bg5", [
-        new assignment(0, ""),
-        new assignment(1, ""),
-        new assignment(2, ""),
-        new assignment(3, "")
+      new course(4, "Pre-Calculus", "teacher5", "theme-purple", "bg6", [
+        new assignment(0, "Homework 4.5"),
+        new assignment(1, "Homework 4.6"),
+        new assignment(2, "Chapter 4 Review"),
+        new assignment(3, "Chapter 4 Quiz")
       ]),
-      new course(3, "", "teacher4", "theme-orange", "bg5", [
-        new assignment(0, ""),
-        new assignment(1, ""),
-        new assignment(2, ""),
-        new assignment(3, "")
+      new course(5, "Spanish", "teacher6", "theme-pink", "bg7", [
+        new assignment(0, "Conjuguemos"),
+        new assignment(1, "Unidad Dos Vocabulario"),
+        new assignment(2, "Quiz Speaking"),
+        new assignment(3, "Quiz Listening")
       ]),
-      new course(3, "", "teacher4", "theme-orange", "bg5", [
-        new assignment(0, ""),
-        new assignment(1, ""),
-        new assignment(2, ""),
-        new assignment(3, "")
+      new course(6, "Graphic Art and Sculpting", "teacher7", "theme-grey", "bg8", [
+        new assignment(0, "Sculpture Project: Final Rubric"),
+        new assignment(1, "Portrait Project: Ideas"),
+        new assignment(2, "Portrait Project: Reubric"),
+        new assignment(3, "Graphic Design Template")
       ]),
-      new course(3, "", "teacher4", "theme-orange", "bg5", [
-        new assignment(0, ""),
-        new assignment(1, ""),
-        new assignment(2, ""),
-        new assignment(3, "")
+      new course(7, "Default Classroom", "teacher8", "theme-yellow", "bg1", [
+        new assignment(0, "Test 1"),
+        new assignment(1, "Test 2"),
+        new assignment(2, "Test 3"),
+        new assignment(3, "Test 4")
       ]),
     ]
 
