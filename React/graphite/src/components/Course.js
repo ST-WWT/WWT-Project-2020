@@ -11,7 +11,7 @@ const Course = ({ course }) => {
     <div className={`class noselect`}>
         <div className={`title ${background}`} style={{borderColor: theme.hex}}>
           <h1>{course.name}</h1>
-          <h2 style={{backgroundColor: theme.format.rgba}}>{`Teacher: ${course.teacher}`}</h2>
+          <h2 style={{backgroundColor: theme.rgba}}>{`Teacher: ${course.teacher}`}</h2>
         </div>
         <div className="schedule">
           <h1><i className="fas fa-align-right"></i> Upcoming assignments</h1>

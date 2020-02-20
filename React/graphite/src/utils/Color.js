@@ -2,18 +2,13 @@ class Color {
     constructor(hex) {
         this.hex = hex;
     }
-    format() {
-        return `rgba(${this.r}, ${this.g}, ${this.b}, ${this.a}`;
-    }
-    rgb() {
-        if(!this.r || !this.g || !this.b) {
-            var bigint = parseInt(this.hex, 16);
-            this.r = (bigint >> 16) & 255;
-            this.g = (bigint >> 8) & 255;
-            this.b = bigint & 255;
-        }
-        this.a = 1.0;
-        this.rgba = `rgba(${this.r}, ${this.g}, ${this.b}, ${this.a}`;
+    get rgba() {
+        var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(this.hex);
+        this.r = this.r || parseInt(result[1], 16);
+        this.g = this.g || parseInt(result[2], 16);
+        this.b = this.b || parseInt(result[3], 16);
+        this.a = this.a || 1.0;
+        return `rgba(${this.r}, ${this.g}, ${this.b}, ${this.a})`;
     }
 }
 
