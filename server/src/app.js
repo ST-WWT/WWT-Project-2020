@@ -1,8 +1,11 @@
 const express = require('express')
 const app = express()
 const mongo = require("mongodb");
+const bodyParser = require('body-parser')
+const cors = require('cors')
+const morgan = require('morgan')
 const MongoClient = mongo.MongoClient;
-const uri = "mongodb+srv://jeremypeck:8KKRYo61wP5dIDEu@wwtgraphite-pb78m.mongodb.net/graphite?retryWrites=true&w=majority";
+const uri = 'mongodb+srv://jeremypeck:hzU3LCTlbmtNten8@wwtgraphite-pb78m.mongodb.net/Graphite?retryWrites=true&w=majority';
 console.log(uri)
 
 let client;
@@ -17,11 +20,18 @@ mongoClient.connect((err, db) => {
         console.log(err);
         return;
     }
-    console.log(db);
+    //console.log(db);
     client = db;
 })
+app.use(morgan('dev'))
+app.use(bodyParser.json())
+app.use(cors())
 
-
+//app.get('/assignments', (req, res) => {
+//    res.send([
+//        'item 1'
+//    ])
+//})
 
 app.get('/assignments', (req, res) => {
     const collection = client.db('Graphite').collection('assignments');
@@ -30,8 +40,23 @@ app.get('/assignments', (req, res) => {
             console.log(err)
             res.send([])
             return
-        }
+         }
+ 
+         res.send(results)
+     })
+ })
 
-        res.send(results)
-    })
-})
+ app.get('/classes', (req, res) => {
+    const collection = client.db('Graphite').collection('classes');
+    collection.find().toArray(function (err, results) {
+        if (err) {
+            console.log(err)
+            res.send([])
+            return
+         }
+ 
+         res.send(results)
+     })
+ })
+
+app.listen(process.env.PORT || 8080)
