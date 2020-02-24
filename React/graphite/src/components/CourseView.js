@@ -1,9 +1,12 @@
 import React from "react";
 import Assignments from "./Assignments";
+import Color from "../utils/Color";
+
 
 const CourseView = ({ course }) => {
   const assignments = course.assignments;
-  const theme = course.theme || "theme-yellow";
+  const theme = new Color(course.theme || "#FFB627");
+  theme.a = 0.3;
   const background = course.background || "bg1";
   return (
     <div id="courseview" className={`${theme}`}>

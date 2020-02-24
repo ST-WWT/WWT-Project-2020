@@ -187,7 +187,7 @@ a {
 }
 
 .navbar .logo {
-  width: 18vmin;
+  width: 20vmin;
   height: 6vmin;
   display: block;
   margin: 0 auto;
@@ -461,79 +461,6 @@ a {
   padding: 0;
   margin-left: 2.5%;
   text-align: left;
-}
-
-#root .content #courses .class.theme-blue .options {
-  color: var(--color-theme-blue);
-}
-#root .content #courses .class.theme-blue .title {
-  border-color: var(--color-theme-blue);
-}
-#root .content #courses .class.theme-blue .title h2 {
-  background-color: var(--color-theme-blue-transparent);
-}
-#root .content #courses .class.theme-green .options {
-  color: var(--color-theme-green);
-}
-#root .content #courses .class.theme-green .title {
-  border-color: var(--color-theme-green);
-}
-#root .content #courses .class.theme-green .title h2 {
-  background-color: var(--color-theme-green-transparent);
-}
-#root .content #courses .class.theme-red .options {
-  color: var(--color-theme-red);
-}
-#root .content #courses .class.theme-red .title {
-  border-color: var(--color-theme-red);
-}
-#root .content #courses .class.theme-red .title h2 {
-  background-color: var(--color-theme-red-transparent);
-}
-#root .content #courses .class.theme-grey .options {
-  color: var(--color-theme-grey);
-}
-#root .content #courses .class.theme-grey .title {
-  border-color: var(--color-theme-grey);
-}
-#root .content #courses .class.theme-grey .title h2 {
-  background-color: var(--color-theme-grey-transparent);
-}
-#root .content #courses .class.theme-purple .options {
-  color: var(--color-theme-purple);
-}
-#root .content #courses .class.theme-purple .title {
-  border-color: var(--color-theme-purple);
-}
-#root .content #courses .class.theme-purple .title h2 {
-  background-color: var(--color-theme-purple-transparent);
-}
-#root .content #courses .class.theme-orange .options {
-  color: var(--color-theme-orange);
-}
-#root .content #courses .class.theme-orange .title {
-  border-color: var(--color-theme-orange);
-}
-#root .content #courses .class.theme-orange .title h2 {
-  background-color: var(--color-theme-orange-transparent);
-}
-#root .content #courses .class.theme-pink .options {
-  color: var(--color-theme-pink);
-}
-#root .content #courses .class.theme-pink .title {
-  border-color: var(--color-theme-pink);
-}
-#root .content #courses .class.theme-pink .title h2 {
-  background-color: var(--color-theme-pink-transparent);
-}
-#root .content #courses .class.theme-yellow .options {
-  color: var(--color-theme-yellow);
-}
-#root .content #courses .class.theme-yellow .title {
-  border-color: var(--color-theme-yellow);
-}
-#root .content #courses .class.theme-yellow .title h2 {
-  background-color: var(--color-theme-yellow-transparent);
 }
 
 
