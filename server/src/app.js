@@ -6,7 +6,6 @@ const cors = require('cors')
 const morgan = require('morgan')
 const MongoClient = mongo.MongoClient;
 const uri = 'mongodb+srv://jeremypeck:hzU3LCTlbmtNten8@wwtgraphite-pb78m.mongodb.net/Graphite?retryWrites=true&w=majority';
-console.log(uri)
 
 let client;
 let mongoClient = new MongoClient(uri, {
@@ -23,9 +22,9 @@ mongoClient.connect((err, db) => {
     //console.log(db);
     client = db;
 })
-app.use(morgan('dev'))
-app.use(bodyParser.json())
-app.use(cors())
+app.use(morgan('dev'));
+app.use(bodyParser.json());
+app.use(cors());
 
 //app.get('/assignments', (req, res) => {
 //    res.send([
@@ -37,12 +36,12 @@ app.get('/assignments', (req, res) => {
     const collection = client.db('Graphite').collection('assignments');
     collection.find().toArray(function (err, results) {
         if (err) {
-            console.log(err)
-            res.send([])
-            return
+            console.log(err);
+            res.send([]);
+            return;
          }
  
-         res.send(results)
+         res.send(results);
      })
  })
 
@@ -50,13 +49,13 @@ app.get('/assignments', (req, res) => {
     const collection = client.db('Graphite').collection('classes');
     collection.find().toArray(function (err, results) {
         if (err) {
-            console.log(err)
-            res.send([])
-            return
+            console.log(err);
+            res.send([]);
+            return;
          }
  
-         res.send(results)
+         res.send(results);
      })
  })
 
-app.listen(process.env.PORT || 8080)
+app.listen(process.env.PORT || 8080);
