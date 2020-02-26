@@ -7,7 +7,7 @@ import CourseView from "./CourseView";
 import Course from "./Course";
 
 
-const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=4a3b711b"; // you should replace this with yours
+const MOVIE_API_URL = "localhost:8000"; // you should replace this with yours
 
 
 const App = () => {
