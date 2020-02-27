@@ -21,7 +21,7 @@ const App = () => {
       .then(response => response.json())
       
       .then(jsonResponse => {
-        console.log("***courses-", jsonResponse)
+        console.log("***courses-", jsonResponse);
         setCourses(jsonResponse);
         console.log("***courses-", courses);
         setLoading(false);
