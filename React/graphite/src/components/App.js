@@ -150,10 +150,32 @@ const App = () => {
     <Courses key={"userid"} courses={courses}/>
     <CourseView key={courses[0].id} course={courses[0]}/>
     */
+
+    const VIEW = {
+      COURSES : 0,
+      COURSEVIEW : 1
+    }
+
+    function doRender(view, args) {
+      switch(view) {
+        case 0 :
+          return <Courses key={args[0]} courses={args[1]}/>;
+        case 1 :
+          return <CourseView key={args[0]} course={args[1]}/>;
+        default:
+          break;
+      }
+    }
+
+
+    const render = doRender(VIEW.COURSES, ["userid", courses]);
+
     return (
      <div className="content">
       <Header />
-      <Courses key={"userid"} courses={courses}/>
+      {
+        render
+      }
       <Footer />
     </div>
   );
