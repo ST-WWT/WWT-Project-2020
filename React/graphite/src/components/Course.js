@@ -34,10 +34,10 @@ const Course = ({ course }) => {
     App.render = doRender(1, [course.id, course]);
   }
   
-
+  routeChange();
 
   return (
-    <div className={`class noselect`} onClick={routeChange()}>
+    <div className={`class noselect`}>
         <div className={`title ${background}`} style={{borderColor: theme.hex}}>
           <h1>{course.name}</h1>
           <h2 style={{backgroundColor: theme.rgba}}>{`Teacher: ${course.teacher}`}</h2>
