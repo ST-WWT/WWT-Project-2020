@@ -4,7 +4,7 @@ import App from "./App";
 import { Link } from "react-router-dom";
 
 
-const Course = ({ course }) => {
+const Course = ({ course, index }) => {
   const assignments = course.assignments;
   const theme = new Color(course.theme || "#FFB627");
   theme.a = 0.3;
@@ -12,7 +12,7 @@ const Course = ({ course }) => {
 
 
   return (
-    <Link to="/course">
+    <Link to={`course-${index}`}>
       <div className={`class noselect`} 
         onClick={()=>{ 
           

@@ -7,7 +7,7 @@ var monthNames = [
     "November", "December"
   ];
 
-const Assignments = ({ assignments }) => {
+const Assignments = ({ assignments, theme }) => {
     console.log(assignments);
   return (
         <ol className="assignments">
@@ -15,7 +15,7 @@ const Assignments = ({ assignments }) => {
             {
                 assignments.map((assignment, index) => (
                     <li key={assignment.id} className="sv">
-                        <div className="icon">
+                        <div className="icon" style={{backgroundColor: theme.hex}}>
                             <i className={`far fa-file-code`}></i>
                         </div>
                         <div className="content">

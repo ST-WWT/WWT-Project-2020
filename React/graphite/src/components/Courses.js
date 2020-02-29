@@ -11,7 +11,7 @@ const Courses = ({ courses }) => {
     <div id="courses">
         {
           courses.map((course, index) => (
-            <Course key={course.id} course={course} />
+            <Course key={course.id} course={course} index={index} />
           ))
         }
     </div>

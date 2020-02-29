@@ -160,7 +160,14 @@ const App = () => {
       <Header />
       <Router>
         <Route path="/" exact component={(props) => <Courses {...props} courses={courses}/>}/>
-        <Route path="/course" component={(props) => <CourseView {...props} course={courses[0]}/>}/>
+        <Route path="/course-0" component={(props) => <CourseView {...props} course={courses[0]}/>}/>
+        <Route path="/course-1" component={(props) => <CourseView {...props} course={courses[1]}/>}/>
+        <Route path="/course-2" component={(props) => <CourseView {...props} course={courses[2]}/>}/>
+        <Route path="/course-3" component={(props) => <CourseView {...props} course={courses[3]}/>}/>
+        <Route path="/course-4" component={(props) => <CourseView {...props} course={courses[4]}/>}/>
+        <Route path="/course-5" component={(props) => <CourseView {...props} course={courses[5]}/>}/>
+        <Route path="/course-6" component={(props) => <CourseView {...props} course={courses[6]}/>}/>
+        <Route path="/course-7" component={(props) => <CourseView {...props} course={courses[7]}/>}/>
       </Router>
       <Footer />
     </div>
