@@ -4,6 +4,9 @@ import Color from "../utils/Color";
 
 
 const CourseView = ({ course }) => {
+  if(!course) {
+    return null;
+  }
   const assignments = course.assignments;
   const theme = new Color(course.theme || "#FFB627");
   theme.a = 0.3;

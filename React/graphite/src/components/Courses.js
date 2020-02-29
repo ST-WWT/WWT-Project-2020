@@ -4,6 +4,9 @@ import Course from "./Course";
 
 
 const Courses = ({ courses }) => {
+  if(!courses) {
+    return null;
+  }
   return (
     <div id="courses">
         {

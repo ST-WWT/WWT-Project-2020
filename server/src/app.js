@@ -39,7 +39,7 @@ app.get('/assignments', (req, res) => {
         if (err) {
             console.log(err);
             res.send([]);
-            return
+            return;
          }
  
          res.send(results);
@@ -52,7 +52,7 @@ app.get('/assignments', (req, res) => {
         if (err) {
             console.log(err);
             res.send([]);
-            return
+            return;
          }
  
          res.send(results);

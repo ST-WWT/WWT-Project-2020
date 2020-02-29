@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Courses from "./Courses";
 import CourseView from "./CourseView";
 import Course from "./Course";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 
 //const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=4a3b711b"; // you should replace this with yours
@@ -149,11 +150,18 @@ const App = () => {
     /*
     <Courses key={"userid"} courses={courses}/>
     <CourseView key={courses[0].id} course={courses[0]}/>
+
+    <Route path="" component={(props) => <Courses {...props} courses={courses}/>}/>
+    <Route path="course" component={(id) => <CourseView key={courses[0].id} course={courses[0]}/>}/>
     */
+
     return (
      <div className="content">
       <Header />
-      <Courses key={"userid"} courses={courses}/>
+      <Router>
+        <Route path="/" exact component={(props) => <Courses {...props} courses={courses}/>}/>
+        <Route path="/course" component={(props) => <CourseView {...props} course={courses[0]}/>}/>
+      </Router>
       <Footer />
     </div>
   );

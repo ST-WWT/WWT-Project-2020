@@ -683,7 +683,6 @@ a {
   font-size: 3vmin;
   padding: none;
   margin: none;
-  text-align: left;
   color: white;
   height: 15vmin;
   text-overflow: ellipsis;
@@ -704,9 +703,21 @@ a {
   height: 4vmin;
   text-overflow: ellipsis;
   overflow: hidden;
-  float: right;
   padding: 0vmin;
-  margin: 1vmin 1.5vmin;
+  margin: 0.5vmin 1.5vmin;
+  float: left;
+}
+
+#root .content #courseview .assignments li.sv .content .dates h2 {
+  display: block;
+  font-size: 1.5vmin;
+  padding: none;
+  margin: none;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 50vmin;
+  margin-left: 2vmin;
 }
 
 
