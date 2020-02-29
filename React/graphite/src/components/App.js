@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Courses from "./Courses";
 import CourseView from "./CourseView";
 import Course from "./Course";
+import Login from "./Login";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 
@@ -168,6 +169,7 @@ const App = () => {
         <Route path="/course-5" component={(props) => <CourseView {...props} course={courses[5]}/>}/>
         <Route path="/course-6" component={(props) => <CourseView {...props} course={courses[6]}/>}/>
         <Route path="/course-7" component={(props) => <CourseView {...props} course={courses[7]}/>}/>
+        <Route path="/login" component={(props) => <Login {...props}/>}/>
       </Router>
       <Footer />
     </div>

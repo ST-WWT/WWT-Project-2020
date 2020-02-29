@@ -721,6 +721,63 @@ a {
 }
 
 
+#root .content #login {
+  width: 70vmin;
+  height: 40vmin;
+  background-color: var(--color-greyblue2);
+  display: block;
+  margin: 21vmin auto;
+  border-radius: 2.5vmin;
+}
+
+#root .content #login .title {
+  width: 100%;
+  display: block;
+  left: 0;
+  top: 0;
+  padding: 1.5vmin;
+  background-color: var(--color-greyblue1);
+  border-radius: 2.5vmin;
+  text-align: center;
+  font-size: 5vmin;
+}
+
+#root .content #login .form h1 {
+  margin: 0vmin 1.5vmin;
+  padding: 0.5vmin 0vmin;
+  font-size: 2vmin;
+}
+
+#root .content #login .form .box {
+  background-color: var(--color-greyblue2);
+  margin: none;
+  display: block;
+}
+
+#root .content #login .form input[type=text], #root .content #login .form input[type=password] {
+  resize: none;
+  width: 60vmin;
+  margin-left: 4vmin;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid var(--color-greyblue5); 
+  color: white;
+  padding: 0.2vmin;
+}
+
+#root .content #login .form input[type=submit] {
+  resize: none;
+  width: 25vmin;
+  padding: 1vmin;
+  display: block;
+  margin: 2vmin auto;
+  border: none;
+  background-color: var(--color-greyblue5); 
+  color: white;
+  border-radius: 0.5vmin;
+}
+
+
 
 
 

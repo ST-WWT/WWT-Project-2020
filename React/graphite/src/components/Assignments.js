@@ -7,6 +7,11 @@ var monthNames = [
     "November", "December"
   ];
 
+const TYPEICON = {
+        0 : "fa-file-code",
+        1 : "fa-file-alt",
+}
+
 const Assignments = ({ assignments, theme }) => {
     console.log(assignments);
   return (
@@ -16,7 +21,7 @@ const Assignments = ({ assignments, theme }) => {
                 assignments.map((assignment, index) => (
                     <li key={assignment.id} className="sv">
                         <div className="icon" style={{backgroundColor: theme.hex}}>
-                            <i className={`far fa-file-code`}></i>
+                            <i className={`far ${TYPEICON[assignment.type]}`}></i>
                         </div>
                         <div className="content">
                             <h1>{assignment.name}</h1>
